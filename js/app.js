@@ -1,6 +1,10 @@
-$( ".nav-toggle" ).click(function() {
-  $(this).toggleClass("open");
-  $("nav").fadeToggle(100);
+jQuery(document).ready(function($) { //wraper for no conflict jquery
 
-  return false;
+  $( ".nav-toggle" ).click(function() {
+    $(this).toggleClass("open");
+    $("nav").fadeToggle(100);
+
+    return false;
+  });  
+  
 });
