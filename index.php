@@ -1,5 +1,21 @@
 <?php get_header(); ?>
 
-<h1>Index file</h1>
+<section class="row">
+  <div class="small-12 columns text-center">
+
+    <!-- https://codex.wordpress.org/The_Loop -->
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+      <div class="leader">
+        <h1><?php the_title(); ?></h1>
+        <p><?php the_content(); ?></p>        
+      </div>
+
+    <?php endwhile; else : ?>
+      <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+
+  </div>
+</section>
 
 <?php get_footer(); ?>
