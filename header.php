@@ -15,7 +15,23 @@
   <a href="" class="nav-toggle"><span></span>Menu</a>
   <nav>
     <h1 class="open"><a class='current' href="index.html">G</a></h1>
-    <ul class="no-bullet">
+
+    <?php 
+
+      $defaults = array(
+        // Whether to wrap the ul, and what to wrap it with. Default 'div'.
+        'container' => 'ul',
+        // tell wordpress that this is where the primary menu lives
+        'theme_location' => 'primary-menu',
+        // CSS class to use for the ul element which forms the menu. Default 'menu'.
+        'menu_class' => 'no-bullet'
+      );
+
+      wp_nav_menu( $defaults );
+
+    ?>
+
+    <!-- <ul>
       <li class="current parent"><a class='current' href="index.html">Portfolio</a>
         <ul class="sub-menu">
           <li><a href="item.html">Portfolio Item</a></li>
@@ -32,6 +48,6 @@
       </li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
-    </ul>
+    </ul> -->
   </nav>
 </header>
