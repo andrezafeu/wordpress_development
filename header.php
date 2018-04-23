@@ -8,7 +8,8 @@
     <?php wp_head(); ?>
   </head>
 
-  <body>
+  <!-- outputs class info -->
+  <body <?php body_class(); ?>>
     <header class="row no-max pad main">
   <!-- https://developer.wordpress.org/reference/functions/bloginfo/ -->
   <h1><a class='current' href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
