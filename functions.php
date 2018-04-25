@@ -19,6 +19,22 @@ function register_theme_menus() {
 // init tells wordpress to execute this when it initializes
 add_action ( 'init', 'register_theme_menus' );
 
+function wptf_create_widget( $name, $id, $description ) {
+
+  register_sidebar(array(
+    'name' => __( $name ),
+    'id' => $id,
+    'description' => __( $description ),
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2 class="module-heading">',
+    'after_title' => '</h2>'
+  ));
+
+}
+
+wptf_create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
+
 function wptf_theme_styles() {
   wp_enqueue_style( 'foundation_css', get_template_directory_uri() . '/css/foundation.css' );
   // wp_enqueue_style( 'normalize_css', get_template_directory_uri() . '/css/normalize.css' );
