@@ -33,6 +33,7 @@ function wptf_create_widget( $name, $id, $description ) {
 
 }
 
+wptf_create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
 wptf_create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
 
 function wptf_theme_styles() {
