@@ -1,7 +1,10 @@
 <?php
 
+$num_posts = ( is_front_page() ) ? 4 : -1;
+
 $args = array(
-  'post_type' => 'myportfolio'
+  'post_type' => 'myportfolio',
+  'posts_per_page' => $num_posts
 );
 $query = new WP_Query( $args );
 
