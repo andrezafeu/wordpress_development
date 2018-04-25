@@ -14,13 +14,11 @@
               <?php the_excerpt(); ?>
               <ul class="post-meta no-bullet">
                 <li class="author">
-                  <a href="author.html">
-                    <span class="wptf-avatar small">
-                      <!-- get the id of the author and echo the avatar on size 24 -->
-                      <?php echo get_avatar( get_the_author_meta( 'ID' ), 24 ); ?>
-                    </span>
-                    by <?php the_author_posts_link(); ?>
-                  </a>
+                  <span class="wptf-avatar small">
+                    <!-- get the id of the author and echo the avatar on size 24 -->
+                    <?php echo get_avatar( get_the_author_meta( 'ID' ), 24 ); ?>
+                  </span>
+                  by <?php the_author_posts_link(); ?>
                 </li>
                 <li class="cat">in <?php the_category( ' ' ); ?></li>
                 <li class="date">in <?php the_time( 'F j, Y' ); ?></li>

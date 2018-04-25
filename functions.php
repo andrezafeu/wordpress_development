@@ -3,6 +3,12 @@
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
 
+function wptf_excerpt_length( $length ) {
+  return 16;
+}
+// tells wordpress to check the wptf_excerpt_length function when setting the excerpt_length
+add_filter( 'excerpt_length', 'wptf_excerpt_length', 999 );
+
 function register_theme_menus() {
   register_nav_menus(
     array(
