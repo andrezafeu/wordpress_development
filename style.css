@@ -1,7 +1,12 @@
 /*
 Theme Name: Wordpress Development
-Author: Andreza Feu
-Author URI: http://andrezafeu.com
+Author: Treehouse
+Author URI: http://teamtreehouse.com/
+Description: A post modern, simple, responsive portfolio theme designed in WordPress Theme Development course at Treehouse.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, white, light, one-column, two-columns, left-sidebar, fluid-layout, responsive-layout, custom-menu, featured-images
 */
 
 @import url();
@@ -968,4 +973,50 @@ ol.children {
 }
 .article-list .articles > li {
   margin: 20px 0 50px;
+}
+
+.alignleft {
+  float: left;
+  margin: 7px 28px 28px 0;
+}
+
+.alignright {
+  float: right;
+  margin: 7px 0 28px 28px;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 7px auto;
+}
+
+.wp-caption {
+  margin-bottom: 1.6em;
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  color: #FFF;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;}
+
+.gallery-caption {
+  color: #FFF;
+}
+
+.sticky {
+  position: relative;
+}
+
+.bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
+  border: 1px solid #333;
+  padding: 2px;
 }

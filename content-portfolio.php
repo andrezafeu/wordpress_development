@@ -16,5 +16,5 @@ $query = new WP_Query( $args );
       <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
     </div>
   <!-- wp_reset_post_data is necessary if there are multiple loops in the page -->
-  <?php endwhile; endif; wp_reset_post_data(); ?>
+  <?php endwhile; endif; wp_reset_postdata(); ?>
 </section>
