@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><?php  wp_title(); ?></title>
+    <title><?php  wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
       <!-- tells wordpress that is this the end of head and if there's anything that a plugin or theme would like to output in this area, this is where it should be done -->
     <?php wp_head(); ?>
   </head>
